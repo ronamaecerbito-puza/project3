@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3 - IT Support & System Maintenance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="support-container">
+    <!-- Header -->
+    <header class="support-header">
+      <div>
+        <h1>IT Support & System Maintenance Portal</h1>
+        <p>Hardware Troubleshooting, Network Diagnostics, & Ticketing Knowledge Base | Project 3</p>
+      </div>
+      <div class="analyst-badge">
+        <span>Support Specialist: <strong>Ronamae Cerbito</strong></span>
+      </div>
+    </header>
+
+    <!-- Quick Stats -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <h3>Resolved Tickets</h3>
+        <p class="stat-value">128</p>
+        <span>This Month</span>
+      </div>
+      <div class="stat-card">
+        <h3>System Uptime</h3>
+        <p class="stat-value">99.4%</p>
+        <span>Lab Infrastructure</span>
+      </div>
+      <div class="stat-card warning">
+        <h3>Active Alerts</h3>
+        <p class="stat-value">2</p>
+        <span>Lab 3 Network Switch</span>
+      </div>
+    </section>
+
+    <!-- Interactive Troubleshooting Section -->
+    <section class="troubleshoot-section">
+      <h2>Interactive IT Troubleshooting Assistant</h2>
+      <p class="section-desc">Pumili ng karaniwang isyu sa ibaba para makita ang mabilis na diagnostic steps at solusyon:</p>
+
+      <div class="issue-selector">
+        <button class="issue-btn active" onclick="showSolution('network')">🌐 Network / Internet Downtime</button>
+        <button class="issue-btn" onclick="showSolution('hardware')">💻 Computer Hardware Failure</button>
+        <button class="issue-btn" onclick="showSolution('printer')">🖨️ Peripheral / Printer Error</button>
+        <button class="issue-btn" onclick="showSolution('database')">🗄️ Database Connection Error</button>
+      </div>
+
+      <div class="solution-box" id="solutionDisplay">
+        <!-- Dynamically updated by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Standard Operating Procedures (SOP) -->
+    <section class="sop-section">
+      <h2>IT Support SOPs & Maintenance Logs</h2>
+      <div class="sop-grid">
+        <div class="sop-card">
+          <h4>Routine Hardware Check</h4>
+          <p>Lingguhang pag-inspeksyon sa mga computer units, linya ng kuryente, at port connections para maiwasan ang sudden breakdown tuwing may klase.</p>
+          <span class="tag">Hardware</span>
+        </div>
+        <div class="sop-card">
+          <h4>Network Bandwidth Monitoring</h4>
+          <p>Pag-subaybay sa internet speed at pag-troubleshoot ng mga linya kapag umabot sa kritikal na antas ang downtime (higit sa 30 minuto).</p>
+          <span class="tag">Networking</span>
+        </div>
+        <div class="sop-card">
+          <h4>User Account Management</h4>
+          <p>Pagbibigay ng tamang access permissions at pag-reset ng mga passwords para sa mga estudyante at guro sa bawat laboratory room.</p>
+          <span class="tag">Security</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
